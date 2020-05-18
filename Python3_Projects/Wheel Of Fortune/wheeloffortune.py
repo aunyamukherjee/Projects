@@ -65,7 +65,7 @@ def phrasePrint(phrase,consonantlist,vowellist):
             blanks += [x]
         elif x in vowellist:
             blanks += [x]
-        elif x in string.ascii_uppercase:
+        elif x in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
             blanks += ['_']
         else:
             blanks += [' ']
