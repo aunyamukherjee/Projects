@@ -106,10 +106,11 @@ def buyAVowel(winnings,phrase):
         print("You do not have enough to buy a vowel! Sorry!")
         vowelguess = 0  #0 denotes unsuccessful guess
     elif winnings>=250:
-        vowelguess= input("Ok! $250 will be deducted from your winnings. Which vowel would you like to buy (A, E, I, O, U)?:").upper()
+        print("Ok! $250 will be deducted from your winnings.")
         winnings += -250
         vowelguess = 'invalid'
         while vowelguess == 'invalid':   #checking validity of guess eachtime
+            vowelguess= input( "Which vowel would you like to buy (A, E, I, O, U)?:").upper()
             if vowelguess not in "AEIOU":
                 print("That's not a vowel! Try again")
                 vowelguess = 'invalid'
