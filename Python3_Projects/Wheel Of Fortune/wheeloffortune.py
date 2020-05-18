@@ -108,12 +108,14 @@ def buyAVowel(winnings,phrase):
     elif winnings>=250:
         vowelguess= input("Ok! $250 will be deducted from your winnings. Which vowel would you like to buy (A, E, I, O, U)?:").upper()
         winnings += -250
-        if vowelguess not in "AEIOU":
-            print("That's not a vowel! Try again")
-            vowelguess= input("Guess a vowel,(A E I O U):").upper()
-        elif len(vowelguess) != 1:
-            print("Please only guess one vowel. Try again:")
-            vowelguess= input("Guess a vowel,(A E I O U):").upper()
+        vowelguess = 'invalid'
+        while vowelguess == 'invalid':   #checking validity of guess eachtime
+            if vowelguess not in "AEIOU":
+                print("That's not a vowel! Try again")
+                vowelguess = 'invalid'
+            elif len(vowelguess) != 1:
+                print("Please only guess one vowel. Try again:")
+                vowelguess = 'invalid'
         vowelnumber= phrase.count(vowelguess)
         if vowelnumber==0:
             print("Sorry,",vowelguess,"does not appear in the puzzle.")
