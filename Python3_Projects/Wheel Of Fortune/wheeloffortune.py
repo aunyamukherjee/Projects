@@ -123,12 +123,18 @@ def solveThePuzzle(winnings,phrase,game):
     puzzleguess= input("What’s your best guess (be sure to enter your guess with single spaces!)?").upper()
     if puzzleguess==phrase:
         print("That’s correct - you solved the puzzle!")
-        print("Congratulations, you’ve won the game! Your winnings are $",winnings)
+        if winnings > 0:
+            print("Congratulations, you’ve won the game! Your winnings are $",winnings)
+        else:
+            print("Sorry, you didn't win any money... Maybe next time!")
         print("Thank you for playing the Wheel of Fortune!")
         game="won"
     else:
-        print("Sorry, that guess is incorrect! Your winnings will start over at $0")
-        winnings=0
+        if winnings >= 0:
+            print("Sorry, that guess is incorrect! Your winnings will start over at $0")
+            winnings=0
+        else:
+            print("Sorry, that guess is incorrect!")  #doesn't reset to zero if you are negative
     return(winnings,phrase,game)
 
 def main():
