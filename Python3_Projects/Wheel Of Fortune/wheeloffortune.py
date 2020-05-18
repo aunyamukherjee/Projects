@@ -36,7 +36,8 @@ def wheelfortune(consonantlist,vowellist):
             #here we add the letter we recieved from the spin function to our ongoing list of consonants
         elif userinput=='VOWEL':
             winnings,phrase,vowelguess=buyAVowel(winnings,phrase)
-            vowellist += vowelguess
+            if vowelguess != 0:
+                vowellist += vowelguess
             #here we add the vowel that was recieved by the vowel function to our ongoing vowel list
         elif userinput=='SOLVE':
             winnings,phrase,game=solveThePuzzle(winnings,phrase,game)
@@ -101,6 +102,7 @@ def spinTheWheel(winnings,phrase):
 def buyAVowel(winnings,phrase):
     if winnings<250:
         print("You do not have enough to buy a vowel! Sorry!")
+        vowelguess = 0  #0 denotes unsuccessful guess
     elif winnings>=250:
         vowelguess= input("Ok! $250 will be deducted from your winnings. Which vowel would you like to buy (A, E, I, O, U)?:").upper()
         winnings += -250
