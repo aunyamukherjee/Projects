@@ -83,13 +83,15 @@ def spinTheWheel(winnings,phrase):
         print("Your winnings will be reset to $0")
         consonantguess=""
     else:
-        consonantguess= input("Guess a consonant:").upper()
-        if consonantguess in "AEIOU":
-            print("That's not a consonant! Try again")
+        consonantguess = 'invalid'
+        while consonantguess == 'invalid':  #continues to check if guesses are valid
             consonantguess= input("Guess a consonant:").upper()
-        elif len(consonantguess) != 1:
-            print("Please only guess one consonant. Try again:")
-            consonantguess= input("Guess a consonant:").upper()
+            if consonantguess in "AEIOU":
+                print("That's not a consonant! Try again")
+                consonantguess = 'invalid'
+            elif len(consonantguess) != 1:
+                print("Please only guess one consonant. Try again:")
+                consonantguess = 'invalid'
         consonantnumber= phrase.count(consonantguess)
         if consonantnumber==0:
             winnings += -spinvalue
