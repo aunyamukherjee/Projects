@@ -1,0 +1,20 @@
+# Date: Nov-4-2020
+# Names: 
+- Lin Huynh
+- Aunya Mukherjee
+- Hans Bakken
+
+# x500s: huynh365, mukhe074, bakke496
+- huynh365@umn.edu
+- mukhe074@umn.edu
+- bakke496@umn.edu
+
+# Screen capture of the terminal message showing wget request and its response
+
+# Plan for work distribution
+- We are planning on looking at the rest of the functionalities throughout this week, and meet this weekend to put everything together
+
+
+* Currently dont have a plan for extra credit problems *
+# Plan for extra credit A
+# Plan for extra credit B
