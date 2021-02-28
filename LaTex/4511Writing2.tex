@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{4511 Writing 2}
+\author{Aunya Mukherjee }
+\date{February 22nd 2021}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+The paper {\it“Theta*: Any-Angle Path Planning on Grids”} \citep{theta*}, gives us a new perspective on how we can go about solving problems with A*. The article argues that in practice, we are able to see more accurate and shorter path distances when we use Theta*, a variant of A* for our search algorithm. The main difference we can see between the two algorithms is that A* requires that the child of a node must be its direct predecessor, where as in Theta*, any node can serve as the parent to our current node. By doing this, we can see that we are able to create shorter paths that bridge fewer nodes situated further apart. 
+
+\bigskip
+
+This paper serves as a good introduction to the topic matter, because it takes time to explain the ways in which Theta* is similar to A*, as well as the ways in which they are different. I would guess that this paper is not introducing a new algorithm, however they are trying to show that Theta* may have more benefits than A* in their use case.
+
+\bigskip
+
+The researchers in the paper also give examples of experimental results that back up their claim, which helpfully provides a visual representation of the algorithms. Obviously, it is not enough to show a few experimental examples to prove that Theta* is always going to be more efficient or find a more optimal solution, but I believe that this paper is able to convince the audience through the experimental results, that there are very valid benefits to exploring Theta* more as a viable search option. 
+
+\bigskip
+
+I wanted to highlight some of the strengths and weaknesses I found as a reader who is not an expert in the topic matter. I think the paper did a good job of explaining the concept at hand, and more specifically, I think the paper utilised its images relatively well. Many readers who are in a similar position as me may find the images very informative when trying to understand Theta*.
+
+\bigskip
+
+In this article, it is mentioned that Theta* search can be very helpful in gaming and graphics, which is further explained by using a grid as the search space (much like it would be represented in a game.) I found this to be very interesting so I went and did a little more research on my own. In the article {\it“Applying Theta* in Modern Game”} \citep{theta*ingaming}, the researchers went more in depth on the values Theta* has to gaming. I especially found the visual representations of Theta* to be helpful as I was trying to understand how the algorithm works. Overall I think that the more applications we can see Theta* used in, the more we will be able to use it to our advantage.
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

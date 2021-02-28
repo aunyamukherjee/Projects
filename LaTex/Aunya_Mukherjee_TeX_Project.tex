@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,amsthm,mathrsfs,graphicx}
+
+\title{MATH 3283W \\ \TeX\ Project}
+\author{Aunya Mukherjee\\University of Minnesota}
+\date{Fall 2018}
+
+\newtheorem*{problem}{Problem}
+
+\begin{document}
+
+\maketitle
+
+\begin{problem}{(4.3 \#3(d))} Prove that the sequence $s_n$ where $s_1 = 1$ and  \\
+$s_{n+1} = \sqrt{(2s_n) + 2}$ is both monotone and bounded. Then find the limit as n approaches $\infty.$
+
+\end{problem}
+
+$$s_1 = 1$$
+$$s_2 = \sqrt{(2 *1) + 2} = \sqrt{4} = 2$$
+$$s_3 = \sqrt{(2 *2) + 2} = \sqrt{6} = 2.45$$
+$$s_4 = \sqrt{(2 *\sqrt{6}) + 2} = 2.627$$
+$$s_4 = \sqrt{(2 *2.627) + 2} = 2.69$$
+
+\bigskip
+
+First we show that the sequence is monotone by proving that it is increasing for all $n\geq1.$
+
+\bigskip
+
+{\it Proof:} We proceed inductively to show that $s_n$ is increasing for all $n\geq1.$
+$Base Case:$ When $n=1$ then, $s_1 = 1 < 2 = s_2.$ \\
+Suppose that $s_k < s_{k+1}$ for some k. \\
+Show that $s_{k+1} < s_{k+2}.$
+$$s_{k+1}=\sqrt{(2*s_k) + 2} < \sqrt{(2*s_{k+1}) + 2}=s_{k+2},$$ since $s_k < s_{k+1}$
+Thus by induction, we can conclude that $s_n$ is increasing for all $n\geq1.$
+\qed
+
+\bigskip
+
+Now that we have proven that this sequence is increasing, we must prove that it is bounded above so that we can apply the Monotone Convergence Theorem.
+The Monotone Convergence Theorem states that a monotone sequence converges if and only if it is bounded.
+Hence, choose an arbitrary upper bound (in this case we will use three) and prove that $s_n \leq 3$ for all $n\geq1.$
+\bigskip
+
+{\it Proof:} We proceed inductively to show that $s_n \leq 3$ for all $n\geq1.$ \\
+$Base Case:$ When $n=1$ then, $s_1 = 1 \leq3.$ \\
+Suppose that $s_k \leq3$ for some k.
+
+Show that $s_{k+1} \leq3.$ We have,
+$$s_{k_1} = \sqrt{(2*s_k) + 2} \leq \sqrt{2*3 +2} = \sqrt{8} < 3.$$
+
+Thus, we have shown that $s_n\leq3$ for all $n\geq1$, which means that the sequence is bounded above.
+\qed
+
+\bigskip
+
+Now using the Monotone Convergence Theorem, which states that a monotone sequence $s_n$ converges to some real number $s$ if and only if it is bounded, we know that the sequence above must converge since we have proven that it is both monotone and bounded.
+\bigskip
+
+The limit $lim s_n = s$ must satisfy the equation $s=\sqrt{(2*s) + 2},$ because both the limits of $s_n$ and $s_{n_1}$ both converge to the real number s.\\
+Solving for s we have,
+$$s^2-2s-2=0$$
+Using the quadratic formula, we find the answers produced by this equation are $1 \pm \sqrt{3}$, and since all of the terms of the series are positive and increasing, they must converge to the positive number,
+$$s=1+\sqrt{3}.$$
+Therefore, we conclude that the sequence $s_n$ converges to $s=1+\sqrt{3}$ as $n$ approaches $\infty.$
+\end{document}
