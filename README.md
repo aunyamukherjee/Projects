@@ -18,9 +18,9 @@ Projects with C, Java, Python, Assembly
 		- LCD Clock simulator. Read a number of seconds from the beginning of the day from the command line and show the results of running functions from clock_update.c on the screen.
 	- PuzzleBox
 		- puzzlebox.c: Inputs are read from a file on the command line. The inputs are modified in various ways to checked to match specific patterns associated with "phases". Each set of correct inputs "passes" a phase and scores points. Correct imputs are found in input.txt
-	- Project 4
-		- Made several data structures to find which were most efficient to search through in time and memory (tested using a benchmark I wrote)
-		- Tested most efficient ways to sum the diagonal of a matrix through data placement and tested against a benchmark
+- Project 4
+	- Made several data structures to find which were most efficient to search through in time and memory (tested using a benchmark I wrote)
+	- Tested most efficient ways to sum the diagonal of a matrix through data placement and tested against a benchmark
 
 ## Java
 - Anagram Tree
