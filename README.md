@@ -1,9 +1,8 @@
 # Class Projects
-Projects with C, Java, Python, Assembly
+Projects with C++, C, Java, Python, Assembly, LaTex
 
-## Assembly
-- Project 3
-	- See Project 2: Clock of C Projects. Reimplements LCD Clock simulator using only assembly. Read a number of seconds from the beginning of the day from the command line and show the results of running functions on the screen.
+## C++
+- Currently working on a Delivery System Simulation Project, inside docs/html Directory, index.html will eventually have more in depth explanation of code
 
 ## C
 - Projects Relating to Operating Systems (Basic Map Reduce, IPC-based Map Reduce, Multi-Threaded Web Server and Web Socket Programming) each have README files as well as Project Write Ups included in their respective directories.
@@ -41,3 +40,10 @@ Suppose the program reads _N_ words. If we assume the words are read in random o
 	- Built upon existing code to create a playable lazer shooting game.
 - Wheel of Fortune Simulator
 	- Using a bank of phrases, one is randomly picked and through I/O the user can make guesses that will either increase or decrease their overall winnings.
+
+## Assembly
+- Project 3
+	- See Project 2: Clock of C Projects. Reimplements LCD Clock simulator using only assembly. Read a number of seconds from the beginning of the day from the command line and show the results of running functions on the screen.
+
+## LaTex
+- Includes LaTex code and corresponding pdf files from past writeups
