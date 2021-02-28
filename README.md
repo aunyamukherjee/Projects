@@ -6,6 +6,8 @@ Projects with C, Java, Python, Assembly
 	- See Project 2: Clock of C Projects. Reimplements LCD Clock simulator using only assembly. Read a number of seconds from the beginning of the day from the command line and show the results of running functions on the screen.
 
 ## C
+- Projects Relating to Operating Systems (Basic Map Reduce, IPC-based Map Reduce, Multi-Threaded Web Server and Web Socket Programming) each have README files as well as Project Write Ups included in their respective directories.
+
 - Project 1
 	- Problem1
 		- Read ints from command line, write them into a file and then read them back.
