@@ -1,5 +1,5 @@
 # Class Projects
-Projects with C++, C, Java, Python, Assembly, LaTex
+Projects with C++, C, Java, Python, OCaml, Assembly, LaTex
 
 ## C++
 - Currently working on a Delivery System Simulation Project, inside docs/html Directory, index.html will eventually have more in depth explanation of code
@@ -40,6 +40,9 @@ Suppose the program reads _N_ words. If we assume the words are read in random o
 	- Built upon existing code to create a playable lazer shooting game.
 - Wheel of Fortune Simulator
 	- Using a bank of phrases, one is randomly picked and through I/O the user can make guesses that will either increase or decrease their overall winnings.
+
+## OCaml
+- Each directory includes a README that outlines the objective of the project, or the structure of the Homework
 
 ## Assembly
 - Project 3
